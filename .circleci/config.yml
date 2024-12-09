@@ -29,7 +29,7 @@ jobs:
       - run:
           name: Build and push Docker image
           command: |
-            docker build -t hellodoker.azurecr.io/mynodeimage:latest .
+            docker build -t hellodok111er.azurecr.io/mynodeimage:latest ./api
             echo $DOCKER_PASS | docker login hellodoker.azurecr.io -u $DOCKER_USER --password-stdin
             docker push hellodoker.azurecr.io/mynodeimage:latest
 workflows:
